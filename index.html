@@ -849,21 +849,17 @@ body {
       <div class="brand">Deriv Smart Pro</div>
       <div class="sub">Quantitative Trading Terminal</div>
     </div>
-    <label>API Token (PAT)</label>
-    <input type="password" id="apiToken" placeholder="pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…" autocomplete="off">
+    <label>Personal Access Token (PAT)</label>
+    <input type="password" id="apiToken" placeholder="pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" autocomplete="off">
     <label>App ID</label>
-    <input type="text" id="appIdInput" placeholder="e.g. 33tgVnJBf1AnlU1cAk2n9" autocomplete="off" style="margin-bottom:22px;">
+    <input type="text" id="appIdInput" placeholder="Your registered App ID from developers.deriv.com" autocomplete="off" style="margin-bottom:22px;">
     <button class="login-btn" id="loginBtn">Connect & Authenticate</button>
-    <div class="login-spinner" id="loginSpinner">Connecting to Deriv API</div>
+    <div class="login-spinner" id="loginSpinner">Connecting to Deriv API…</div>
     <div class="login-err" id="loginErr"></div>
-    <div class="login-note">
-      Get your PAT at app.deriv.com/account/api-token<br>
-      Required scopes: Read · Trade · Payments<br>
-      Get your App ID at app.deriv.com/developer-tools
-    </div>
+    <div class="login-note">Generate a PAT at <b>app.deriv.com → Account Settings → API Token</b><br>Register your App ID at <b>developers.deriv.com</b><br>Required scopes: Read · Trade · Payments</div>
   </div>
 </div>
-
+  
 <!-- ══════════════════ APP ══════════════════ -->
 <div id="app">
 
